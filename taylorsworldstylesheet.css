@@ -1,0 +1,41 @@
+.body {
+    background: white;
+    size: inherit;
+}
+
+.nav {
+    background-color: black;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 14px;
+}
+
+.nav a:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+.column {
+    float: left;
+    width: 100%;
+    text-align: center;
+    height: max-content;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
