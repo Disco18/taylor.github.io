@@ -1,41 +1,148 @@
-.body {
-    background: white;
-    size: inherit;
+    body {
+        background: rgb(46, 46, 46);
+        margin: 0;
+        padding: 0;
 }
 
-.nav {
-    background-color: black;
+    * {
+        box-sizing:border-box;
 }
 
-.nav a {
-    float: left;
-    display: block;
-    color: whitesmoke;
-    text-align: center;
-    text-decoration: none;
-    padding: 14px 14px;
+    .nav {
+        background-color: rgb(34, 34, 34);
+        position: fixed;
+        top: 0;
+        width: 100%;
 }
 
-.nav a:hover {
-    color: black;
-    background-color: whitesmoke;
+    .nav a {
+        float: left;
+        display: block;
+        color: whitesmoke;
+        text-align: center;
+        text-decoration: none;
+        padding: 14px 14px;
 }
 
-.column {
-    float: left;
-    width: 100%;
-    text-align: center;
-    height: max-content;
+    .nav a:hover {
+        color: whitesmoke;
+        background-color: #7e5e92;
 }
 
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
+    .nav .active {
+        color: whitesmoke;
+    }
+    .nav a.active{
+        background-color: #7e5e92;
+}
+
+    .column {
+        float: left;
+        width: 33%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .column-01 {
+        float: left;
+        width: 66.66%;
+}
+
+    .linkedlogo {
+        padding-left: 15px;
+    }
+
+    .aboutmepara {
+        padding-right: 20px;
+    }
+
+    .aboutme {
+        color: #7e5e92;
+        float: left;
+        width: 33.33%;
+        padding-top: 60px;
+        
+}
+
+    .intrest {
+        padding-top: 30px;
+        color: #7e5e92;
+        text-align: center;
+    }
+
+    .personalprofile {
+        padding-top: 30px;
+        color: #7e5e92;
+        text-align: center;
+    }
+
+    .button {
+        border: none;
+        color: whitesmoke;
+        background-color: #7e5e92;
+        padding: 14px 26px;
+        font-size: 16px;
+        cursor: pointer;
+        float: left;
+}
+
+    .button:hover {
+        background-color: #961de2;
+    }
+
+    .header {
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+        color: whitesmoke;
+    }
+
+    .topname {
+        position: absolute;
+        font-size: 65px;
+        padding: 5px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 5px solid #7e5e92;
+        background-color: #7e5e92;
+        border-radius: 8px;
+    }
+
+    .selfie {
+        float: left;
+        width: 33.33%;
+        padding: 20px;
+    }
+
+    .selfie img {
+        height: auto;
+        max-width: 100%;
+        display: block;
+    }
+
+    .row {
+        background-color: rgb(36, 36, 36);
+        color: whitesmoke;
+}
+
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
 }
 
 @media screen and (max-width: 600px) {
-    .column {
+        .column-01, .selfie {
         width: 100%;
-    }
+        text-align: center;
+        }
+        .selfie img {
+            margin: auto;
+        }
+}
+
+    .footer {
+        background-color: black;
+        float: left;
+        width: 100%;
 }
